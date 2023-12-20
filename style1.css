@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    border: 2px solid cornflowerblue;
+    background-color: aqua;
+    height: 100px;
+    text-align: justify;
+}
+header > a{
+    margin: 0px 20px;
+    text-decoration: none;
+    
+}
+section{
+    height: 500px;
+    width: 1000px;
+    margin: auto;
+    background-color: rgb(219,212,212);
+}
+footer{
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(243, 140, 210);
+    text-align: center;
+}
+footer>a{
+    color: rgb(73, 3, 72);
+    text-decoration: none;
+    
+}
