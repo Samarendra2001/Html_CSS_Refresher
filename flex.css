@@ -1,0 +1,28 @@
+div{
+    width: 100px;
+    height: 100px;
+    font-size: xx-large;
+    background-color: aquamarine;
+    border: 2px solid chocolate
+}
+body{
+    display: flex;
+    margin: 0;
+    width: 80vw;
+    height: 80vh;
+    border: 2px solid chocolate;
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    flex-wrap: wrap;  /* it is for content to be responsive */
+    
+}
+
+/* allign items is for vertical and justify-content is for horizontal */
+/* .three{
+    align-self:flex-end;
+} */
