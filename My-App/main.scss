@@ -1,0 +1,82 @@
+// operators
+// variables
+//nesting
+//mixin
+//parameter passing
+//partials it means if you have lots of mixin or variable you can put it 
+//in  a separate file and call it to main
+
+
+
+@import "mixin";
+@import "var";
+// you can put the variable and mixin in separate file as 
+//we hv created and import it to this file like this and always use' _'
+//for creating file for variable and mixing but while importing don't use _.
+
+
+// thesse are the variables
+
+$bg-color:#10ac84;
+$color2:rgb(152, 120, 2);
+$color3:rgb(120, 6, 120);
+$font1:7rem;
+$font2:3rem;
+
+
+// nesting
+// this is called nesting. like as you can see in main we have
+// h1 and p tag 
+// in nesting if you want to modify in a single tag /element
+// you can use '&' rather using it's name again and again
+// like we did in h1 and p tag
+
+
+
+//mixin
+// it simply mean when you have to use same property again and again
+// you can write it  in one place in "mixin" and later u can use it by include mixin.
+// 
+@mixin flexprob{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.main{
+    @include flexprob;
+    width: 100vw;
+    height:100vh;
+    background: $bg-color;
+
+    h1{
+        color: $color2;
+        font-size: $font1;
+        &:hover{
+            color: $color3;
+        }
+    }
+    
+
+    p{
+        color: $color3;
+        font-size: $font2;
+        &:hover{
+            color:$color2;
+        }
+    }
+    
+}
+
+
+
+

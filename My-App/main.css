@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: #10ac84;
+}
+.main h1 {
+  color: rgb(152, 120, 2);
+  font-size: 7rem;
+}
+.main h1:hover {
+  color: rgb(120, 6, 120);
+}
+.main p {
+  color: rgb(120, 6, 120);
+  font-size: 3rem;
+}
+.main p:hover {
+  color: rgb(152, 120, 2);
+}/*# sourceMappingURL=main.css.map */
