@@ -1,0 +1,32 @@
+/* For responsiveness we can use media queries ,Flexbox and grid
+which is recommended and another one is according to screen size. */
+
+body{
+    background-color: aqua;
+}
+/* div{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+} */
+/* @media all and (max-width:1000px){
+    body{
+        background-color: bisque;
+    }
+    div{
+        background-color: brown;
+        width: 100px;
+        height: 100px;
+    }
+} */
+
+/* 2nd method */
+div{
+    background-color: black;
+    width: 10vw; 
+    height: 18vh;
+    margin: 50px;
+}
+/* this is bcz now the scrren is 200 px and the total screen size is 1920. so if you devide 1920/200 
+you will get 42 which is the percent of vw or vh . so it will work for every screen*/
