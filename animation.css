@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+}
+.box{
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+    font: bold 2rem cursive;
+    color: blueviolet;
+    margin: 2vmax;
+    /* transition: all 0.5s; */
+}
+/* .box:hover{
+ background-color:darkgoldenrod; 
+ color: firebrick; 
+ /* width: 70%; */
+ /* box-shadow: 10px 10px 20px black; */
+ /* transform: skew(-30deg); */
+ /* transform: translate(100px,100px); */
+ /* transform: scale(2); */
+ /* basically all these units you can give both for x and y axis */
+ /* transform: rotate(90deg); */
+ /* transform: scale(2)translate(100px,100px); */
+
+/* } */ 
+
+/* animation */
+
+#box1{
+    animation: myanimation 1s linear 1s 6 ;
+}
+#box2{
+    animation: myani2 2s linear 1s 3 alternate;
+}
+
+@keyframes myanimation{
+    from{
+        background-color: brown;
+    }
+    to{
+        background-color: cornflowerblue;
+    }
+}
+
+@keyframes myani2 {
+    0%{
+        background-color: brown;
+        transform: scale(2);
+    }
+    50%{
+        border-radius: 100%;
+        background-color: blueviolet;
+    }
+    100%{
+        background-color: blanchedalmond;
+        transform: scale(20);
+    }
+}
